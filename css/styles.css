@@ -106,6 +106,20 @@ header .container {
 header {
     border-bottom: 1px solid #e7e9fc;
 }
+.navigation-item{
+    position: relative;
+}
+.current::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #404bbf;
+    position: absolute;
+    bottom: -1px;
+    right: 0;
+    border-radius: 2px;
+}
 
 .navigation-link:focus,
 .navigation-link:hover{
@@ -177,7 +191,7 @@ header {
     padding: 188px 0;
     text-align: center;
     background-color: #2e2f42;
-    background-image: url(../images/peaple-back.jpg);
+
     background-repeat: no-repeat;
     background-size: cover;
     /*надо доделать темный фон или скачать в тз посмотреть */
