@@ -102,7 +102,7 @@ header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);;
+    box-shadow: 0 2px 1px rgba(46, 47, 66, 0.08), 0 1px 1px rgba(46, 47, 66, 0.16), 0 1px 6px rgba(46, 47, 66, 0.08);;
 
 }
 header {
@@ -309,11 +309,7 @@ background-position: center;
     margin-right: 16px;
     margin-left: 16px;
 }
-.our-team-icon-li{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 .our-team-item{
     width: 40px;
     height: 40px;
