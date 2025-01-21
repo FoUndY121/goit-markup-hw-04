@@ -102,6 +102,8 @@ header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);;
+
 }
 header {
     border-bottom: 1px solid #e7e9fc;
@@ -113,12 +115,18 @@ header {
     content: "";
     display: block;
     width: 100%;
-    height: 3px;
+    height: 4px;
     background-color: #404bbf;
     position: absolute;
     bottom: -1px;
     right: 0;
     border-radius: 2px;
+}
+.current{
+    position: relative;
+    color: #404bbf;
+
+    transition: color  2000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navigation-link:focus,
@@ -146,6 +154,7 @@ header {
     gap: 40px;
     display: flex;
     list-style-type: none;
+
 }
 
 /*хедер мени андресса гмеил и номер телефона*/
@@ -163,6 +172,7 @@ header {
     list-style-type: none;
 }
 .address-item {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -186,12 +196,14 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width:1440px;
 }
 .hero {
+
     padding: 188px 0;
     text-align: center;
     background-color: #2e2f42;
-
+background-position: center;
     background-repeat: no-repeat;
     background-size: cover ;
     /*надо доделать темный фон или скачать в тз посмотреть */
@@ -225,6 +237,7 @@ header {
     letter-spacing: 0.04em;
     color: #ffffff;
     cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-button:focus,
@@ -264,7 +277,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #2e2f42;
+    border:  1px solid #8e8f99;
     background-color: #F4F4FD  ;
     margin-bottom: 8px;
     border-radius: 4px;
@@ -302,19 +315,35 @@ header {
     align-items: center;
     width: 40px;
     height: 40px;
-    background-color: #4D5AE5;
-    border: 1px solid #212121;
-    border-radius: 50%;
+
 
 }
 .our-team-links{
     margin-top: 10px;
+
 }
 
-  .our-team-icon-li:hover {
-    background-color: #31D0AA;
-      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+  .team-list-link-icon:hover {
+    background-color: #404bbf;
+
 }
+  .team-list-link-icon{
+      width: 100%;
+      height: 100%;
+      background-color: #4d5ae5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #212121;
+      border-radius: 50%;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  }
+  .social-icon{
+      fill: #f4f4fd;
+  }
 
 
 
