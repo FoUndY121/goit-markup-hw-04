@@ -313,10 +313,10 @@ background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.our-team-item{
     width: 40px;
     height: 40px;
-
-
 }
 .our-team-links{
     margin-top: 10px;
@@ -325,9 +325,9 @@ background-position: center;
 
 
 
-  .team-list-link-icon:hover {
+  .team-list-link-icon:hover,
+  .team-list-link-icon:focus  {
     background-color: #404bbf;
-
 }
   .team-list-link-icon{
       width: 100%;
